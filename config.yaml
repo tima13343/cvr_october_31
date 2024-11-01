@@ -1,0 +1,9 @@
+ # config.yaml
+ path: C:\Users\030\PycharmProjects\cvr\.venv\datasets  # Путь к папке с вашим датасетом
+ train: C:\Users\030\PycharmProjects\cvr\image\train
+# Путь к папке с тренировочными изображениями
+ val: C:\Users\030\PycharmProjects\cvr\image\train
+# Путь к папке с валидационными изображениями
+ nc: 2
+# Укажите количество классов в вашем датасете
+ names: ['roki-2', 'walker']  # Список с названиями классов
