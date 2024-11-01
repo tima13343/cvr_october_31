@@ -16,7 +16,6 @@ cv2.namedWindow("mask")
 def nothing(x):
     pass
 
-
 cv2.createTrackbar("lh", "mask", lh, 255, nothing)
 cv2.createTrackbar("ls", "mask", ls, 255, nothing)
 cv2.createTrackbar("lv", "mask", lv, 255, nothing)
@@ -79,7 +78,8 @@ while (True):
             # print(a)
 
             cv2.putText(frame, str(a), (l, t), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2, cv2.LINE_AA)
-            cv2.rectangle(frame, (l, t), (l + w, t + h), (0, 255, 0), 2)
+            cv2.rectangle(frame, (l, t), (l + w, t + h), (77, 24, 23), 2)
+            cv2.circle(frame, (l + w//2, t + h//2), 3, (255, 255, 0), 6)
 
     # print("=====================")
     # break
